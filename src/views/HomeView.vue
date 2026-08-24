@@ -137,7 +137,7 @@ const nextMonth = () => {
 
 const loadAvailability = async () => {
   try {
-    const response = await axios.get('http://localhost:5000/api/reservations/availability');
+    const response = await axios.get('https://school-hall-api.onrender.com/api/reservations/availability');
     reservationCounts.value = response.data;
 
     const todayKey = new Date().toISOString().slice(0, 10);

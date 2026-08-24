@@ -101,7 +101,7 @@ const form = ref({
 
 const handleSubmit = async () => {
   try {
-    await axios.post('http://localhost:5000/api/reservations', form.value);
+    await axios.post('https://school-hall-api.onrender.com/api/reservations', form.value);
     alert('Zahtjev je uspješno zaprimljen i poslan administratoru na čekanje!');
     router.push('/'); // Vraćanje na početni kalendar
   } catch (err) {

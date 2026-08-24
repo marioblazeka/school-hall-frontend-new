@@ -105,7 +105,7 @@ const handleLogin = async () => {
   isLoading.value = true;
   error.value = '';
   try {
-    const res = await axios.post('http://localhost:5000/api/auth/login', {
+    const res = await axios.post('https://school-hall-api.onrender.com/api/auth/login', {
       email: email.value,
       password: password.value
     });

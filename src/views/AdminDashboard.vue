@@ -84,7 +84,7 @@ const fetchReqs = async () => {
       router.push('/login');
       return;
     }
-    const res = await axios.get('http://localhost:5000/api/reservations', {
+    const res = await axios.get('https://school-hall-api.onrender.com/api/reservations', {
       headers: { Authorization: `Bearer ${token}` }
     });
     reqs.value = res.data;
