@@ -35,7 +35,7 @@ const router = useRouter();
 
 const handleLogin = async () => {
   try {
-    const res = await axios.post('https://onrender.com', {
+    const res = await axios.post('http://localhost:5000/api/auth/login', {
       email: email.value, password: password.value
     });
     localStorage.setItem('token', res.data.token);

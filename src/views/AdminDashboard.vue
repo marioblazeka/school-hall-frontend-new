@@ -43,7 +43,7 @@ const router = useRouter();
 const fetchReqs = async () => {
   try {
     const token = localStorage.getItem('token');
-    const res = await axios.get('https://onrender.com', {
+    const res = await axios.get('http://localhost:5000/api/reservations', {
       headers: { Authorization: `Bearer ${token}` }
     });
     reqs.value = res.data;
@@ -55,7 +55,7 @@ const fetchReqs = async () => {
 const updateStatus = async (id, status) => {
   try {
     const token = localStorage.getItem('token');
-    await axios.put(`https://onrender.com/${id}`, { status }, {
+    await axios.put(`http://localhost:5000/api/reservations/${id}`, { status }, {
       headers: { Authorization: `Bearer ${token}` }
     });
     fetchReqs();
