@@ -17,7 +17,7 @@
         <span class="text-[11px] font-medium mt-1 select-none">Rezervacija</span>
       </router-link>
 
-      <router-link to="/admin" class="flex flex-col items-center justify-center w-20 pt-1 pb-1 transition-colors" :class="[$route.path.startsWith('/admin') ? 'text-[#EE7D31]' : 'text-gray-400']">
+      <router-link to="/login" class="flex flex-col items-center justify-center w-20 pt-1 pb-1 transition-colors" :class="[$route.path === '/login' || $route.path.startsWith('/admin') ? 'text-[#EE7D31]' : 'text-gray-400']">
         <IconAdmin />
         <span class="text-[11px] font-medium mt-1 select-none">Administrator</span>
       </router-link>
