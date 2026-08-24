@@ -127,7 +127,7 @@ const handleSignup = async () => {
 
   isLoading.value = true;
   try {
-    await axios.post('http://localhost:5000/api/auth/signup', {
+    await axios.post('https://school-hall-api.onrender.com/api/auth/signup', {
       email: email.value,
       password: password.value
     });
@@ -149,7 +149,7 @@ const requestReset = async () => {
   resetMessage.value = '';
   resetError.value = '';
   try {
-    const response = await axios.post('http://localhost:5000/api/auth/forgot-password', {
+    const response = await axios.post('https://school-hall-api.onrender.com/api/auth/forgot-password', {
       email: resetEmail.value
     });
     resetMessage.value = response.data.resetToken
@@ -168,7 +168,7 @@ const resetPassword = async () => {
   resetMessage.value = '';
   resetError.value = '';
   try {
-    const response = await axios.post('http://localhost:5000/api/auth/reset-password', {
+    const response = await axios.post('https://school-hall-api.onrender.com/api/auth/reset-password', {
       token: resetToken.value,
       password: newPassword.value
     });

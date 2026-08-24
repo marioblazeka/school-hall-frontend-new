@@ -97,7 +97,7 @@ const fetchReqs = async () => {
 const updateStatus = async (id, status) => {
   try {
     const token = localStorage.getItem('token');
-    await axios.put(`http://localhost:5000/api/reservations/${id}`, { status }, {
+    await axios.put(`https://school-hall-api.onrender.com/api/reservations/${id}`, { status }, {
       headers: { Authorization: `Bearer ${token}` }
     });
     fetchReqs();
