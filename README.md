@@ -9,7 +9,7 @@
 
 ### Fakultet informatike Web aplikacije: 199769, Web aplikacije (WEBFIPU)
 
-## <[link na javni URL aplikacije](https://schoolhallbooking.netlify.app/) (https://school-hall-frontend-new.vercel.app/)> School Hall Booking </a>
+## <[link na javni URL aplikacije] (https://schoolhallbooking.netlify.app/) (https://school-hall-frontend-new.vercel.app/) School Hall Booking
 
 ### Kratki opis funkcionalnosti:
 School Hall Booking je web-aplikacija namijenjena evidentiranju i upravljanju zahtjevima za rezervaciju školske sportske dvorane i pripadajućih resursa. Projekt proizlazi iz problema ručnog vođenja rezervacija putem telefona, elektroničke pošte i nepovezanih evidencija, pri čemu korisnici nemaju jedinstven pregled raspoloživih termina, a administrator mora ručno obrađivati zahtjeve.
